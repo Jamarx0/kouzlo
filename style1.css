@@ -5,14 +5,20 @@ body {
 }
 
 h1 {
-    background-color: #a642d9;
+    background-color: rgba(166, 66, 217, 0.8); /* Průhledný fialový */
     font-family: Arial, sans-serif;
     text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Stín */
+    transition: background-color 0.3s ease;
+}
 
+h1:hover {
+    background-color: rgba(166, 66, 217, 1); /* Plný fialový při najetí myší */
 }
 
 p {
-    color: rgba(132, 0, 255, 0.94)
+    color: rgba(132, 0, 255, 0.94);
 }
 
 nav ul {
@@ -25,16 +31,26 @@ nav ul a {
     padding: 10px;
     color: #333;
     font-weight: bold;
+    transition: background-color 0.3s ease; /* Plynulý přechod */
+}
+
+nav ul a:hover {
+    background-color: #ddd; /* Zvýraznění na najetí myší */
 }
 
 section {
     padding: 20px;
+    transition: background-color 0.5s ease; /* Plynulý přechod */
 }
 
 .obsah {
     padding: 30px;
     text-align: center;
     background-color: #b905ac;
+}
+
+.obsah:hover {
+    background-color: #ec00ff; /* Změna barvy na najetí myší */
 }
 
 footer {
@@ -48,4 +64,9 @@ img {
     height: auto;
     display: block;
     margin: 0 auto;
+    transition: transform 0.3s ease; /* Plynulý přechod */
+}
+
+img:hover {
+    transform: scale(1.1); /* Zvětšení obrázku na najetí myší */
 }
