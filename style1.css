@@ -5,14 +5,14 @@ body {
 }
 
 h1 {
-    background-color: #ecdf29;
+    background-color: #a642d9;
     font-family: Arial, sans-serif;
     text-align: center;
 
 }
 
 p {
-    color: #ff0000
+    color: rgba(132, 0, 255, 0.94)
 }
 
 nav ul {
@@ -34,11 +34,11 @@ section {
 .obsah {
     padding: 30px;
     text-align: center;
-    background-color: #2fff00;
+    background-color: #b905ac;
 }
 
 footer {
-    background-color: #00eaff;
+    background-color: #8605b0;
     text-align: center;
     padding: 10px;
 }
