@@ -70,3 +70,125 @@ img {
 img:hover {
     transform: scale(1.1); /* Zvětšení obrázku na najetí myší */
 }
+
+.sekce-kontakt {
+    padding: 30px;
+    text-align: center;
+    background-color: #e1e6ec;
+    display: flex;
+}
+
+.accordion {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 650px;
+    gap: 20px;
+    transition: 0.5s;
+}
+
+/* obličeje - navigace */
+
+.accordion li {
+    position: relative;
+    overflow: hidden;
+    flex: 0 0 200px;
+    border-radius: 50px;
+    opacity: 0.75;
+    cursor: pointer;
+    transition: flex 0.5s, opacity 0.3s;
+    transition: 0.5s;
+}
+
+
+/* obličeje - obrázky */
+.accordion li img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+
+}
+
+
+/* obličeje - písmo */
+
+.accordion h2 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 45px;
+    border-bottom: 2px solid #fff;
+    margin-bottom: 10px;
+    white-space: nowrap;
+}
+/* obličeje - obsah */
+.accordion li .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    color: #890304;
+    padding: 100px;
+    background: linear-gradient(
+            0deg,
+            rgb(0 0 0 / 70%) 10%,
+            rgb(255 255 255 / 0%) 100%
+    );
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+/* obličeje - animace*/
+
+.accordion li .content span {
+    position: absolute;
+    z-index: 3;
+    left: 50%;
+    bottom: 50px;
+    translate: -300px 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.accordion li:hover {
+    flex: 0 1 260px;
+    scale: 1.1;
+    z-index: 10;
+    opacity: 1;
+}
+
+.accordion li:hover .content {
+    opacity: 50;
+    visibility: visible;
+}
+
+.accordion li:hover span {
+    translate: -50% 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+:root {
+    --primary: #6B43FF;
+    --secondary: #1D1D1D;
+}
+
+.spodni_text {
+    padding: 30px;
+    text-align: center;
+    background-color: #e1e6ec;
+
+}
+/* Dolní část písmo */
+.spodni_text p {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
